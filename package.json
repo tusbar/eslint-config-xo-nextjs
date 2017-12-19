@@ -1,0 +1,60 @@
+{
+  "name": "eslint-config-xo-nextjs",
+  "version": "1.0.0",
+  "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
+  "license": "MIT",
+  "author": "Bertrand Marron",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "files": [
+    "index.js",
+    "space.js"
+  ],
+  "keywords": [
+    "❤️",
+    "react",
+    "jsx",
+    "eslintconfig",
+    "xo",
+    "xoxo",
+    "hugs",
+    "kisses",
+    "happy",
+    "happiness",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "standard",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint",
+    "simple",
+    "zeit",
+    "nextjs"
+  ],
+  "peerDependencies": {
+    "babel-eslint": "^8",
+    "eslint": "^3",
+    "eslint-plugin-react": "^7"
+  },
+  "dependencies": {
+    "eslint-config-xo-react": "^0.15.0"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git"
+}
