@@ -14,6 +14,7 @@ module.exports = {
     'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-brace-presence': ['error', {
       props: 'never',
+      // This allows <style jsx>{`…`}</style>
       children: 'ignore'
     }],
     'react/jsx-first-prop-new-line': 'off',
