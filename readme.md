@@ -1,4 +1,4 @@
-# eslint-config-xo-nextjs [![Build Status](https://travis-ci.org/tusbar/eslint-config-xo-nextjs.svg?branch=master)](https://travis-ci.org/tusbar/eslint-config-xo-nextjs)
+# eslint-config-xo-nextjs
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo)
 
