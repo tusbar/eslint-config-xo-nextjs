@@ -6,8 +6,10 @@ module.exports = {
 
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
+
     // Disable button-has-type as it does not work with props.
     'react/button-has-type': 'off',
+
     'react/forbid-component-props': 'off',
     'react/jsx-closing-bracket-location': ['error', {
       nonEmpty: 'tag-aligned',
@@ -28,7 +30,9 @@ module.exports = {
       beforeSelfClosing: 'always',
       afterOpening: 'never'
     }],
+
     // Next.js auto-imports React
+    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off'
   }
 }
