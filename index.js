@@ -29,10 +29,6 @@ module.exports = {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
       afterOpening: 'never'
-    }],
-
-    // Next.js auto-imports React
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off'
+    }]
   }
 }
