@@ -80,3 +80,16 @@ $ npm install --save-dev eslint-config-xo-nextjs eslint-plugin-react
 ## License
 
 MIT © [Bertrand Marron](https://github.com/tusbar)
+
+
+## Miscellaneous
+
+```
+    ╚⊙ ⊙╝
+  ╚═(███)═╝
+ ╚═(███)═╝
+╚═(███)═╝
+ ╚═(███)═╝
+  ╚═(███)═╝
+   ╚═(███)═╝
+```
