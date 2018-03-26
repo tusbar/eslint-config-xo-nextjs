@@ -9,11 +9,6 @@
 $ npm install --save-dev eslint-config-xo eslint-config-xo-nextjs eslint-plugin-react babel-eslint
 ```
 
-## Info
-
-This uses babel-eslint in order to use class (static) properties. It only works with eslint^3, see https://github.com/babel/babel-eslint/issues/487.
-
-
 ## Usage
 
 Add some ESLint config to your package.json:
