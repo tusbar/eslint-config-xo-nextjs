@@ -50,7 +50,7 @@
     "eslint-plugin-react": ">=7.6.1"
   },
   "dependencies": {
-    "eslint-config-xo-react": "^0.17.0"
+    "eslint-config-xo-react": "^0.18.0"
   },
   "main": "index.js",
   "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git"
