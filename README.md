@@ -9,7 +9,7 @@
 ## Install
 
 ```
-$ npm install --save-dev eslint-config-xo eslint-config-xo-nextjs eslint-plugin-react babel-eslint
+$ npm install --save-dev eslint-config-xo-nextjs eslint-plugin-react eslint-plugin-react-hooks babel-eslint
 ```
 
 ## Usage
