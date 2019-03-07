@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-nextjs",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
   "license": "MIT",
   "author": "Bertrand Marron",
