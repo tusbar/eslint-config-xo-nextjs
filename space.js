@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const {join} = require('path')
 
