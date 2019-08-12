@@ -61,7 +61,7 @@
   "devDependencies": {
     "ava": "^2.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
+    "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.4.0",
     "is-plain-obj": "^2.0.0",
