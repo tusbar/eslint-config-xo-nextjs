@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index should generate error messages 1`] = `
+Array [
+  Object {
+    "column": 11,
+    "endColumn": 32,
+    "endLine": 1,
+    "line": 1,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`index should generate error messages 2`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 6,
+    "endLine": 1,
+    "line": 1,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+  Object {
+    "column": 2,
+    "endColumn": 5,
+    "endLine": 1,
+    "line": 1,
+    "message": "'App' is not defined.",
+    "nodeType": "JSXIdentifier",
+    "ruleId": "react/jsx-no-undef",
+    "severity": 2,
+  },
+  Object {
+    "column": 2,
+    "endColumn": 11,
+    "endLine": 2,
+    "line": 2,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+  Object {
+    "column": 3,
+    "endColumn": 8,
+    "endLine": 2,
+    "line": 2,
+    "message": "'Hello' is not defined.",
+    "nodeType": "JSXIdentifier",
+    "ruleId": "react/jsx-no-undef",
+    "severity": 2,
+  },
+]
+`;

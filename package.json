@@ -2,13 +2,15 @@
   "name": "eslint-config-xo-nextjs",
   "version": "1.4.0",
   "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
-  "license": "MIT",
+  "main": "index.js",
+  "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git",
   "author": "Bertrand Marron",
+  "license": "MIT",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
-    "test": "ava"
+    "test": "jest"
   },
   "files": [
     "index.js",
@@ -49,27 +51,55 @@
   ],
   "peerDependencies": {
     "babel-eslint": ">=10",
-    "eslint": ">=5",
-    "eslint-plugin-react": ">=7.12.3",
-    "eslint-plugin-react-hooks": ">=1.4.0"
+    "eslint": ">=6",
+    "eslint-plugin-react": ">=7.14.2",
+    "eslint-plugin-react-hooks": ">=1.6.1"
   },
   "dependencies": {
-    "eslint-config-xo-react": "^0.19.0"
+    "eslint-config-xo-react": "^0.20.0"
   },
-  "main": "index.js",
-  "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git",
   "devDependencies": {
-    "ava": "^2.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.4.0",
-    "is-plain-obj": "^2.0.0",
-    "temp-write": "^4.0.0",
-    "xo": "^0.24.0"
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "jest": "^24.9.0",
+    "jest-junit": "^8.0.0",
+    "xo": "^0.25.3"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.js"
+    ],
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "reports/tests"
+        }
+      ]
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js",
+      "space.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
   },
   "xo": {
     "semicolon": false,
-    "space": 2
+    "space": 2,
+    "overrides": [
+      {
+        "files": "__tests__/**/*.js",
+        "envs": [
+          "jest"
+        ]
+      }
+    ]
   }
 }

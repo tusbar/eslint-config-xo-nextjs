@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index should generate spacing errors messages 1`] = `
+Array [
+  Object {
+    "column": 1,
+    "endColumn": 6,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        13,
+        13,
+      ],
+      "text": "  ",
+    },
+    "line": 2,
+    "message": "Expected indentation of 2 space characters but found 0.",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/jsx-indent",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 6,
+    "endLine": 2,
+    "line": 2,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 9,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        19,
+        19,
+      ],
+      "text": "  ",
+    },
+    "line": 3,
+    "message": "Expected indentation of 2 space characters but found 0.",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/jsx-indent",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 9,
+    "endLine": 3,
+    "line": 3,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`index should generate spacing errors messages 2`] = `
+Array [
+  Object {
+    "column": 2,
+    "endColumn": 7,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        13,
+        14,
+      ],
+      "text": "  ",
+    },
+    "line": 2,
+    "message": "Expected indentation of 2 space characters but found 0.",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/jsx-indent",
+    "severity": 2,
+  },
+  Object {
+    "column": 2,
+    "endColumn": 7,
+    "endLine": 2,
+    "line": 2,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+  Object {
+    "column": 3,
+    "endColumn": 11,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        20,
+        22,
+      ],
+      "text": "  ",
+    },
+    "line": 3,
+    "message": "Expected indentation of 2 space characters but found 0.",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/jsx-indent",
+    "severity": 2,
+  },
+  Object {
+    "column": 3,
+    "endColumn": 11,
+    "endLine": 3,
+    "line": 3,
+    "message": "'React' must be in scope when using JSX",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+]
+`;
