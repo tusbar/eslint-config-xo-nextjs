@@ -1,14 +1,11 @@
 'use strict'
 
 module.exports = {
-  extends: 'eslint-config-xo-react',
+  extends: 'xo-react',
   parser: 'babel-eslint',
 
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
-
-    // Disable button-has-type as it does not work with props.
-    'react/button-has-type': 'off',
 
     'react/forbid-component-props': 'off',
     'react/jsx-closing-bracket-location': ['error', {

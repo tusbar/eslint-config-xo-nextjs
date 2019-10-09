@@ -17,9 +17,9 @@ defaults:
     restore_cache:
       name: Restore node_modules cache
       keys:
-        - v1-eslint-config-xo-nextjs-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
-        - v1-eslint-config-xo-nextjs-node-master-{{ checksum "yarn.lock" }}
-        - v1-eslint-config-xo-nextjs-node-master-
+        - v2-eslint-config-xo-nextjs-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+        - v2-eslint-config-xo-nextjs-node-master-{{ checksum "yarn.lock" }}
+        - v2-eslint-config-xo-nextjs-node-master-
 
 jobs:
   checkout:
@@ -41,22 +41,22 @@ jobs:
       - restore_cache:
           name: Restore yarn cache
           keys:
-            - v1-eslint-config-xo-nextjs-yarn-{{ checksum "yarn.lock" }}
-            - v1-eslint-config-xo-nextjs-yarn-
+            - v2-eslint-config-xo-nextjs-yarn-{{ checksum "yarn.lock" }}
+            - v2-eslint-config-xo-nextjs-yarn-
 
       - run:
           name: Install dependencies
-          command: yarn
+          command: yarn --frozen-lockfile
 
       - save_cache:
           name: Save yarn cache
-          key: v1-eslint-config-xo-nextjs-yarn-{{ checksum "yarn.lock" }}
+          key: v2-eslint-config-xo-nextjs-yarn-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn/
 
       - save_cache:
           name: Save node_modules cache
-          key: v1-eslint-config-xo-nextjs-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v2-eslint-config-xo-nextjs-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
 
@@ -80,6 +80,8 @@ jobs:
           name: Run tests
           command: yarn test
 
+      - store_test_results:
+          path: reports/tests/
 
 workflows:
   version: 2
