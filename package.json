@@ -56,7 +56,7 @@
     "eslint-plugin-react-hooks": ">=1.6.1"
   },
   "dependencies": {
-    "eslint-config-xo-react": "^0.20.0"
+    "eslint-config-xo-react": "^0.22.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
