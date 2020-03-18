@@ -7,7 +7,18 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
 
+    'react/boolean-prop-naming': ['warn', {
+      validateNested: true
+    }],
     'react/forbid-component-props': 'off',
+    'react/function-component-definition': ['error', {
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'arrow-function'
+    }],
+    'react/require-default-props': ['warn', {
+      forbidDefaultForRequired: true,
+      ignoreFunctionalComponents: true
+    }],
     'react/jsx-closing-bracket-location': ['error', {
       nonEmpty: 'tag-aligned',
       selfClosing: false
