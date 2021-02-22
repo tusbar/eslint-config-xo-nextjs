@@ -59,3 +59,27 @@ Array [
   },
 ]
 `;
+
+exports[`index should generate error messages 3`] = `
+Array [
+  Object {
+    "column": 5,
+    "endColumn": 7,
+    "endLine": 2,
+    "fix": Object {
+      "range": Array [
+        33,
+        35,
+      ],
+      "text": "element",
+    },
+    "line": 2,
+    "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
+    "nodeType": "Identifier",
+    "ruleId": "unicorn/prevent-abbreviations",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`index should generate error messages 4`] = `Array []`;

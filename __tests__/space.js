@@ -1,14 +1,4 @@
-const path = require('path')
-const eslint = require('eslint')
-
-function runEslint(statement) {
-  const linter = new eslint.CLIEngine({
-    useEslintrc: false,
-    configFile: path.join(__dirname, '../space.js')
-  })
-
-  return linter.executeOnText(statement).results[0]
-}
+const {runEslint} = require('./__helpers__/eslint')
 
 describe('index', () => {
   it('should generate spacing errors messages', () => {

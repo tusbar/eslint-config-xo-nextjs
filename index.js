@@ -2,7 +2,11 @@
 
 module.exports = {
   extends: 'xo-react',
-  parser: 'babel-eslint',
+
+  plugins: [
+    'import',
+    'node'
+  ],
 
   rules: {
     // Extensions

@@ -3,20 +3,20 @@
 exports[`index should generate spacing errors messages 1`] = `
 Array [
   Object {
-    "column": 1,
-    "endColumn": 6,
-    "endLine": 2,
+    "column": 7,
+    "endColumn": 9,
+    "endLine": 1,
     "fix": Object {
       "range": Array [
-        13,
-        13,
+        6,
+        8,
       ],
-      "text": "  ",
+      "text": "element",
     },
-    "line": 2,
-    "message": "Expected indentation of 2 space characters but found 0.",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/jsx-indent",
+    "line": 1,
+    "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
+    "nodeType": "Identifier",
+    "ruleId": "unicorn/prevent-abbreviations",
     "severity": 2,
   },
   Object {
@@ -31,17 +31,17 @@ Array [
   },
   Object {
     "column": 1,
-    "endColumn": 9,
-    "endLine": 3,
+    "endColumn": 6,
+    "endLine": 2,
     "fix": Object {
       "range": Array [
-        19,
-        19,
+        13,
+        13,
       ],
-      "text": "  ",
+      "text": "	",
     },
-    "line": 3,
-    "message": "Expected indentation of 2 space characters but found 0.",
+    "line": 2,
+    "message": "Expected indentation of 1 tab character but found 0.",
     "nodeType": "JSXOpeningElement",
     "ruleId": "react/jsx-indent",
     "severity": 2,
@@ -54,6 +54,23 @@ Array [
     "message": "'React' must be in scope when using JSX",
     "nodeType": "JSXOpeningElement",
     "ruleId": "react/react-in-jsx-scope",
+    "severity": 2,
+  },
+  Object {
+    "column": 1,
+    "endColumn": 9,
+    "endLine": 3,
+    "fix": Object {
+      "range": Array [
+        19,
+        19,
+      ],
+      "text": "	",
+    },
+    "line": 3,
+    "message": "Expected indentation of 1 tab character but found 0.",
+    "nodeType": "JSXOpeningElement",
+    "ruleId": "react/jsx-indent",
     "severity": 2,
   },
 ]
@@ -62,20 +79,20 @@ Array [
 exports[`index should generate spacing errors messages 2`] = `
 Array [
   Object {
-    "column": 2,
-    "endColumn": 7,
-    "endLine": 2,
+    "column": 7,
+    "endColumn": 9,
+    "endLine": 1,
     "fix": Object {
       "range": Array [
-        13,
-        14,
+        6,
+        8,
       ],
-      "text": "  ",
+      "text": "element",
     },
-    "line": 2,
-    "message": "Expected indentation of 2 space characters but found 0.",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/jsx-indent",
+    "line": 1,
+    "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
+    "nodeType": "Identifier",
+    "ruleId": "unicorn/prevent-abbreviations",
     "severity": 2,
   },
   Object {
@@ -86,23 +103,6 @@ Array [
     "message": "'React' must be in scope when using JSX",
     "nodeType": "JSXOpeningElement",
     "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-  Object {
-    "column": 3,
-    "endColumn": 11,
-    "endLine": 3,
-    "fix": Object {
-      "range": Array [
-        20,
-        22,
-      ],
-      "text": "  ",
-    },
-    "line": 3,
-    "message": "Expected indentation of 2 space characters but found 0.",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/jsx-indent",
     "severity": 2,
   },
   Object {
