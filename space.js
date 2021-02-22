@@ -1,9 +1,9 @@
 'use strict'
 
-const {join} = require('path')
+const path = require('path')
 
 module.exports = {
-  extends: join(__dirname, 'index.js'),
+  extends: path.join(__dirname, 'index.js'),
   rules: {
     'react/jsx-indent-props': [2, 2],
     'react/jsx-indent': [2, 2]

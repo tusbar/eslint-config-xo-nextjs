@@ -1,10 +1,10 @@
-const {join} = require('path')
+const path = require('path')
 const eslint = require('eslint')
 
 function runEslint(statement) {
   const linter = new eslint.CLIEngine({
     useEslintrc: false,
-    configFile: join(__dirname, '../space.js')
+    configFile: path.join(__dirname, '../space.js')
   })
 
   return linter.executeOnText(statement).results[0]
