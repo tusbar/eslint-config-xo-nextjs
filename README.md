@@ -12,51 +12,7 @@
 $ yarn add --dev eslint-config-xo-nextjs
 ```
 
-## Usage
-
-Add some ESLint config to your package.json:
-
-```json
-{
-	"name": "my-awesome-project",
-	"eslintConfig": {
-		"extends": ["xo", "xo-nextjs"]
-	}
-}
-```
-
-Or to .eslintrc:
-
-```json
-{
-	"extends": ["xo", "xo-nextjs"]
-}
-```
-
-Use the `space` sub-config if you want 2 space indentation instead of tabs:
-
-```json
-{
-	"extends": ["xo", "xo-nextjs/space"]
-}
-```
-
-You can also mix it with a [XO](https://github.com/sindresorhus/xo) sub-config:
-
-```json
-{
-	"extends": ["xo/esnext", "xo-nextjs"]
-}
-```
-
-
-## Tip
-
 ### Use with XO
-
-```
-$ npm install --save-dev eslint-config-xo-nextjs eslint-plugin-react
-```
 
 ```json
 {

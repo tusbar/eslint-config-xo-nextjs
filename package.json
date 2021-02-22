@@ -17,16 +17,11 @@
     "space.js"
   ],
   "keywords": [
-    "❤️",
     "react",
     "jsx",
     "eslintconfig",
     "xo",
     "xoxo",
-    "hugs",
-    "kisses",
-    "happy",
-    "happiness",
     "code",
     "quality",
     "style",
@@ -103,9 +98,6 @@
           "jest"
         ]
       }
-    ],
-    "rules": {
-      "unicorn/string-content": "off"
-    }
+    ]
   }
 }
