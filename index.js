@@ -5,8 +5,36 @@ module.exports = {
   parser: 'babel-eslint',
 
   rules: {
+    // Extensions
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        ignorePackages: true,
+        pattern: {
+          ts: 'never',
+          tsx: 'never',
+          js: 'never',
+          jsx: 'never'
+        }
+      }
+    ],
+
+    'node/file-extension-in-import': [
+      'error',
+      'always',
+      {
+        '.ts': 'never',
+        '.tsx': 'never',
+        '.js': 'never',
+        '.jsx': 'never'
+      }
+    ],
+
+    // JSX
     'jsx-quotes': ['error', 'prefer-single'],
 
+    // React
     'react/boolean-prop-naming': ['warn', {
       validateNested: true
     }],
