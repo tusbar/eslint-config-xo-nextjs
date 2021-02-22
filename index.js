@@ -66,6 +66,15 @@ module.exports = {
       closingSlash: 'never',
       beforeSelfClosing: 'always',
       afterOpening: 'never'
-    }]
+    }],
+    'react/style-prop-object': [
+      'error',
+      {
+        allow: [
+          // This is for react-intl
+          'FormattedNumber'
+        ]
+      }
+    ]
   }
 }
