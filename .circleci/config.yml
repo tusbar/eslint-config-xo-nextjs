@@ -81,7 +81,7 @@ jobs:
     steps:
       - *attach_workspace
 
-      - install-nodejs:
+      - restore-nodejs:
           key: v1-eslint-config-xo-nextjs
 
       - run:
