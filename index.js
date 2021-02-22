@@ -12,15 +12,12 @@ module.exports = {
     // Extensions
     'import/extensions': [
       'error',
-      'always',
+      'ignorePackages',
       {
-        ignorePackages: true,
-        pattern: {
-          ts: 'never',
-          tsx: 'never',
-          js: 'never',
-          jsx: 'never'
-        }
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never'
       }
     ],
 
