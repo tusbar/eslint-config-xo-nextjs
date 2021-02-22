@@ -21,6 +21,7 @@ commands:
         type: string
       working_directory:
         type: string
+        default: *workspace_root
       default_branch:
         type: string
         default: master
@@ -39,6 +40,7 @@ commands:
         type: string
       working_directory:
         type: string
+        default: *workspace_root
     steps:
       - restore-nodejs:
           key: << parameters.key >>
