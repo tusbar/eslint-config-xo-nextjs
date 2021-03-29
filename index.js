@@ -63,6 +63,11 @@ module.exports = {
       beforeSelfClosing: 'always',
       afterOpening: 'never'
     }],
+    'react/jsx-no-duplicate-props': ['error', {
+      // This allows material-ui’s usage of inputProps and InputProps together:
+      // <TextField inputProps={{…}} InputProps={{…}} /> errors otherwise.
+      ignoreCase: false
+    }],
     'react/require-default-props': ['warn', {
       forbidDefaultForRequired: true,
       ignoreFunctionalComponents: true
