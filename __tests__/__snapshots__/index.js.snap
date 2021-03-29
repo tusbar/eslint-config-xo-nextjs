@@ -1,90 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`index should generate error messages 1`] = `
-Array [
-  Object {
-    "column": 11,
-    "endColumn": 32,
-    "endLine": 1,
-    "line": 1,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-]
-`;
-
-exports[`index should generate error messages 2`] = `
-Array [
-  Object {
-    "column": 1,
-    "endColumn": 6,
-    "endLine": 1,
-    "line": 1,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-  Object {
-    "column": 2,
-    "endColumn": 5,
-    "endLine": 1,
-    "line": 1,
-    "message": "'App' is not defined.",
-    "messageId": "undefined",
-    "nodeType": "JSXIdentifier",
-    "ruleId": "react/jsx-no-undef",
-    "severity": 2,
-  },
-  Object {
-    "column": 2,
-    "endColumn": 11,
-    "endLine": 2,
-    "line": 2,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-  Object {
-    "column": 3,
-    "endColumn": 8,
-    "endLine": 2,
-    "line": 2,
-    "message": "'Hello' is not defined.",
-    "messageId": "undefined",
-    "nodeType": "JSXIdentifier",
-    "ruleId": "react/jsx-no-undef",
-    "severity": 2,
-  },
-]
-`;
-
-exports[`index should generate error messages 3`] = `
-Array [
-  Object {
-    "column": 5,
-    "endColumn": 7,
-    "endLine": 2,
-    "fix": Object {
-      "range": Array [
-        33,
-        35,
-      ],
-      "text": "element",
+exports[`index should fail if react is in scope and not needed 1`] = `
+Object {
+  "errorCount": 1,
+  "filePath": "react-in-scope.jsx",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [
+    Object {
+      "column": 8,
+      "endColumn": 13,
+      "endLine": 1,
+      "line": 1,
+      "message": "'React' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
     },
-    "line": 2,
-    "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
-    "nodeType": "Identifier",
-    "ruleId": "unicorn/prevent-abbreviations",
-    "severity": 2,
-  },
-]
+  ],
+  "source": "import React from 'react'
+
+export default function App() {
+  return <div />
+}
+",
+  "warningCount": 0,
+}
 `;
 
-exports[`index should generate error messages 4`] = `Array []`;
+exports[`index should generate error messages 1`] = `
+Object {
+  "errorCount": 6,
+  "filePath": "<text>",
+  "fixableErrorCount": 4,
+  "fixableWarningCount": 0,
+  "messages": Array [
+    Object {
+      "column": 1,
+      "endColumn": 29,
+      "endLine": 1,
+      "fix": Object {
+        "range": Array [
+          0,
+          3,
+        ],
+        "text": "let",
+      },
+      "line": 1,
+      "message": "Unexpected var, use let or const instead.",
+      "messageId": "unexpectedVar",
+      "nodeType": "VariableDeclaration",
+      "ruleId": "no-var",
+      "severity": 2,
+    },
+    Object {
+      "column": 5,
+      "endColumn": 10,
+      "endLine": 1,
+      "line": 1,
+      "message": "'React' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    Object {
+      "column": 1,
+      "endColumn": 17,
+      "endLine": 2,
+      "fix": Object {
+        "range": Array [
+          29,
+          32,
+        ],
+        "text": "let",
+      },
+      "line": 2,
+      "message": "Unexpected var, use let or const instead.",
+      "messageId": "unexpectedVar",
+      "nodeType": "VariableDeclaration",
+      "ruleId": "no-var",
+      "severity": 2,
+    },
+    Object {
+      "column": 5,
+      "endColumn": 7,
+      "endLine": 2,
+      "fix": Object {
+        "range": Array [
+          33,
+          35,
+        ],
+        "text": "element",
+      },
+      "line": 2,
+      "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
+      "nodeType": "Identifier",
+      "ruleId": "unicorn/prevent-abbreviations",
+      "severity": 2,
+    },
+    Object {
+      "column": 5,
+      "endColumn": 7,
+      "endLine": 2,
+      "line": 2,
+      "message": "'el' is assigned a value but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
+    },
+    Object {
+      "column": 17,
+      "fix": Object {
+        "range": Array [
+          45,
+          45,
+        ],
+        "text": "
+",
+      },
+      "line": 2,
+      "message": "Newline required at end of file but not found.",
+      "messageId": "missing",
+      "nodeType": "Program",
+      "ruleId": "eol-last",
+      "severity": 2,
+    },
+  ],
+  "source": "var React = require('react')
+var el = <div />",
+  "warningCount": 0,
+}
+`;
+
+exports[`index should not require react to be in scope for using JSX 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "react-not-in-scope.jsx",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [],
+  "warningCount": 0,
+}
+`;

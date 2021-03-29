@@ -1,15 +1,21 @@
 const path = require('path')
-const eslint = require('eslint')
-const baseConfig = require('xo/config/plugins')
+const {lintFiles, lintText} = require('xo')
 
-function runEslint(statement) {
-  const linter = new eslint.CLIEngine({
-    useEslintrc: false,
-    configFile: path.join(__dirname, '../../index.js'),
-    baseConfig
-  })
+async function lintStatement(statement) {
+  const {results} = await lintText(statement)
 
-  return linter.executeOnText(statement).results[0]
+  return results[0]
 }
 
-module.exports = {runEslint}
+async function lintFixture(fixture) {
+  const filePath = path.join('__tests__', '__fixtures__', fixture)
+
+  const {results} = await lintFiles([filePath])
+
+  return {
+    ...results[0],
+    filePath: fixture
+  }
+}
+
+module.exports = {lintStatement, lintFixture}

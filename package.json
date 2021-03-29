@@ -45,7 +45,8 @@
     "nextjs"
   ],
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=7",
+    "react": ">=17"
   },
   "dependencies": {
     "eslint-config-xo-react": "^0.24.0",
@@ -90,6 +91,9 @@
   "xo": {
     "semicolon": false,
     "space": 2,
+    "ignores": [
+      "__tests__/__fixtures__/**"
+    ],
     "overrides": [
       {
         "files": "__tests__/**/*.js",
