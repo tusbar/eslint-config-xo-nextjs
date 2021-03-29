@@ -44,10 +44,6 @@ module.exports = {
       namedComponents: 'function-declaration',
       unnamedComponents: 'arrow-function'
     }],
-    'react/require-default-props': ['warn', {
-      forbidDefaultForRequired: true,
-      ignoreFunctionalComponents: true
-    }],
     'react/jsx-closing-bracket-location': ['error', {
       nonEmpty: 'tag-aligned',
       selfClosing: false
@@ -67,14 +63,15 @@ module.exports = {
       beforeSelfClosing: 'always',
       afterOpening: 'never'
     }],
-    'react/style-prop-object': [
-      'error',
-      {
-        allow: [
-          // This is for react-intl
-          'FormattedNumber'
-        ]
-      }
-    ]
+    'react/require-default-props': ['warn', {
+      forbidDefaultForRequired: true,
+      ignoreFunctionalComponents: true
+    }],
+    'react/style-prop-object': ['error', {
+      allow: [
+        // This allows react-intl’s <FormattedNumber value={0.42} style='percent' />
+        'FormattedNumber'
+      ]
+    }]
   }
 }
