@@ -3,6 +3,10 @@
 module.exports = {
   extends: 'xo-react',
 
+  plugins: [
+    '@next/eslint-plugin-next'
+  ],
+
   rules: {
     // Extensions
     'import/extensions': [
@@ -74,6 +78,10 @@ module.exports = {
         // This allows react-intl’s <FormattedNumber value={0.42} style='percent' />
         'FormattedNumber'
       ]
-    }]
+    }],
+
+    // Next.js
+    '@next/next/no-css-tags': 'error',
+    '@next/next/no-sync-scripts': 'error'
   }
 }
