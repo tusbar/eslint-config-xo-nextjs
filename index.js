@@ -82,6 +82,7 @@ module.exports = {
 
     // Next.js
     '@next/next/no-css-tags': 'error',
-    '@next/next/no-sync-scripts': 'error'
+    '@next/next/no-sync-scripts': 'error',
+    '@next/next/no-unwanted-polyfillio': 'error'
   }
 }
