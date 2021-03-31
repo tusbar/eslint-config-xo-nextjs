@@ -55,3 +55,19 @@ describe('react/react-in-jsx-scope', () => {
     expect(result.messages[0].message).toBe('\'React\' is defined but never used.')
   })
 })
+
+describe('react/style-prop-object', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/style-prop-object.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/style-prop-object.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/style-prop-object')
+    expect(result.messages[0].message).toBe('Style prop value must be an object')
+  })
+})
