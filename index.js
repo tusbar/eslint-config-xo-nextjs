@@ -3,11 +3,6 @@
 module.exports = {
   extends: 'xo-react',
 
-  plugins: [
-    'import',
-    'node'
-  ],
-
   rules: {
     // Extensions
     'import/extensions': [
