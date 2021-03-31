@@ -67,7 +67,8 @@
       "<rootDir>/__tests__/**/*.js"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/__tests__/__helpers__/"
+      "<rootDir>/__tests__/__helpers__/",
+      "<rootDir>/__tests__/__fixtures__/"
     ],
     "reporters": [
       "default",
@@ -96,7 +97,7 @@
     ],
     "overrides": [
       {
-        "files": "__tests__/**/*.js",
+        "files": "__tests__/*.js",
         "envs": [
           "jest"
         ]

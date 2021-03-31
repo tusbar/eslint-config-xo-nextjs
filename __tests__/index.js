@@ -1,23 +1,35 @@
-const {lintStatement, lintFixture} = require('./__helpers__/eslint')
+const lintFixture = require('../lib/lint-fixture')
 
-describe('index', () => {
-  it('should fail if react is in scope and not needed', async () => {
-    const result = await lintFixture('react-in-scope.jsx')
-    expect(result.messages[0].ruleId).toBe('no-unused-vars')
+describe('jsx-quotes', () => {
+  it('correct', async () => {
+    const result = await lintFixture('jsx-quotes.correct.js')
+
+    expect(result.errorCount).toBe(0)
     expect(result).toMatchSnapshot()
   })
+})
 
-  it('should not require react to be in scope for using JSX', async () => {
-    const result = await lintFixture('react-not-in-scope.jsx')
+describe('react/jsx-closing-bracket-location', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-closing-bracket-location.correct.js')
+
+    expect(result.errorCount).toBe(0)
+    expect(result).toMatchSnapshot()
+  })
+})
+
+describe('react/react-in-jsx-scope', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/react-in-jsx-scope.correct.js')
+
     expect(result.errorCount).toBe(0)
     expect(result).toMatchSnapshot()
   })
 
-  it('should generate error messages', async () => {
-    const result = await lintStatement(
-      'var React = require(\'react\')\nvar el = <div />'
-    )
+  it('incorrect', async () => {
+    const result = await lintFixture('react/react-in-jsx-scope.incorrect.js')
 
+    expect(result.messages[0].message).toBe('\'React\' is defined but never used.')
     expect(result).toMatchSnapshot()
   })
 })
