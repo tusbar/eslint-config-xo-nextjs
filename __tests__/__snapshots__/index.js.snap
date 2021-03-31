@@ -11,6 +11,44 @@ Object {
 }
 `;
 
+exports[`jsx-quotes incorrect 1`] = `
+Object {
+  "errorCount": 1,
+  "filePath": "jsx-quotes.incorrect.js",
+  "fixableErrorCount": 1,
+  "fixableWarningCount": 0,
+  "messages": Array [
+    Object {
+      "column": 14,
+      "endColumn": 30,
+      "endLine": 3,
+      "fix": Object {
+        "range": Array [
+          63,
+          79,
+        ],
+        "text": "'This is not ok'",
+      },
+      "line": 3,
+      "message": "Unexpected usage of doublequote.",
+      "messageId": "unexpected",
+      "nodeType": "Literal",
+      "ruleId": "jsx-quotes",
+      "severity": 2,
+    },
+  ],
+  "source": "export function IncorrectComponent() {
+  return (
+    <div one=\\"This is not ok\\">
+      Some invalid quotes
+    </div>
+  )
+}
+",
+  "warningCount": 0,
+}
+`;
+
 exports[`react/jsx-closing-bracket-location correct 1`] = `
 Object {
   "errorCount": 0,

@@ -1,12 +1,10 @@
-export default function Component() {
+export default function CorrectComponent() {
   return (
     <div
-      className='cool'
-      style={{
-        fontWeight: 'bold'
-      }}
+      one='cool'
+      two="This is 'ok' though"
     >
-      Single quotes everywhere.
+      Single quotes everywhere, almost.
     </div>
   )
 }

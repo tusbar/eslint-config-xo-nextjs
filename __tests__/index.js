@@ -7,6 +7,13 @@ describe('jsx-quotes', () => {
     expect(result.errorCount).toBe(0)
     expect(result).toMatchSnapshot()
   })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('jsx-quotes.incorrect.js')
+
+    expect(result.messages[0].message).toBe('Unexpected usage of doublequote.')
+    expect(result).toMatchSnapshot()
+  })
 })
 
 describe('react/jsx-closing-bracket-location', () => {
