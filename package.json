@@ -64,25 +64,11 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/__tests__/**/*.js"
-    ],
-    "testPathIgnorePatterns": [
-      "<rootDir>/__tests__/__helpers__/",
-      "<rootDir>/__tests__/__fixtures__/"
-    ],
-    "reporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": "reports/tests"
-        }
-      ]
+      "<rootDir>/__tests__/*.js"
     ],
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "index.js",
-      "space.js"
+      "index.js"
     ],
     "coverageReporters": [
       "lcov",

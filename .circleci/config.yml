@@ -98,7 +98,9 @@ jobs:
 
       - run:
           name: Run tests
-          command: yarn test
+          command: yarn test --runInBand --ci --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/tests/
 
       - store_test_results:
           path: reports/tests/
