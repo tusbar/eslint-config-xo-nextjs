@@ -68,6 +68,7 @@ module.exports = {
       // <TextField inputProps={{…}} InputProps={{…}} /> errors otherwise.
       ignoreCase: false
     }],
+    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': ['warn', {
       forbidDefaultForRequired: true,
