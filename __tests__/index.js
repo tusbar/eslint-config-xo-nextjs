@@ -1,17 +1,35 @@
-const {runEslint} = require('./__helpers__/eslint')
+const lintFixture = require('../lib/lint-fixture')
 
-describe('index', () => {
-  it('should generate error messages', () => {
-    const statements = [
-      'var app = <div className=\'foo\'>Unicorn</div>',
-      '<App>\n\t<Hello />\n</App>',
-      'var React = require(\'react\')\nvar el = <div />',
-      'import foo from \'foo\''
-    ]
+describe('jsx-quotes', () => {
+  it('correct', async () => {
+    const result = await lintFixture('jsx-quotes.correct.js')
 
-    for (const statement of statements) {
-      const {messages} = runEslint(statement)
-      expect(messages).toMatchSnapshot()
-    }
+    expect(result.errorCount).toBe(0)
+    expect(result).toMatchSnapshot()
+  })
+})
+
+describe('react/jsx-closing-bracket-location', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-closing-bracket-location.correct.js')
+
+    expect(result.errorCount).toBe(0)
+    expect(result).toMatchSnapshot()
+  })
+})
+
+describe('react/react-in-jsx-scope', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/react-in-jsx-scope.correct.js')
+
+    expect(result.errorCount).toBe(0)
+    expect(result).toMatchSnapshot()
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/react-in-jsx-scope.incorrect.js')
+
+    expect(result.messages[0].message).toBe('\'React\' is defined but never used.')
+    expect(result).toMatchSnapshot()
   })
 })

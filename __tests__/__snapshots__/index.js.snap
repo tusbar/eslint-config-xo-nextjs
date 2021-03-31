@@ -1,90 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`index should generate error messages 1`] = `
-Array [
-  Object {
-    "column": 11,
-    "endColumn": 32,
-    "endLine": 1,
-    "line": 1,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-]
+exports[`jsx-quotes correct 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "jsx-quotes.correct.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [],
+  "warningCount": 0,
+}
 `;
 
-exports[`index should generate error messages 2`] = `
-Array [
-  Object {
-    "column": 1,
-    "endColumn": 6,
-    "endLine": 1,
-    "line": 1,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-  Object {
-    "column": 2,
-    "endColumn": 5,
-    "endLine": 1,
-    "line": 1,
-    "message": "'App' is not defined.",
-    "messageId": "undefined",
-    "nodeType": "JSXIdentifier",
-    "ruleId": "react/jsx-no-undef",
-    "severity": 2,
-  },
-  Object {
-    "column": 2,
-    "endColumn": 11,
-    "endLine": 2,
-    "line": 2,
-    "message": "'React' must be in scope when using JSX",
-    "messageId": "notInScope",
-    "nodeType": "JSXOpeningElement",
-    "ruleId": "react/react-in-jsx-scope",
-    "severity": 2,
-  },
-  Object {
-    "column": 3,
-    "endColumn": 8,
-    "endLine": 2,
-    "line": 2,
-    "message": "'Hello' is not defined.",
-    "messageId": "undefined",
-    "nodeType": "JSXIdentifier",
-    "ruleId": "react/jsx-no-undef",
-    "severity": 2,
-  },
-]
+exports[`react/jsx-closing-bracket-location correct 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "react/jsx-closing-bracket-location.correct.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [],
+  "warningCount": 0,
+}
 `;
 
-exports[`index should generate error messages 3`] = `
-Array [
-  Object {
-    "column": 5,
-    "endColumn": 7,
-    "endLine": 2,
-    "fix": Object {
-      "range": Array [
-        33,
-        35,
-      ],
-      "text": "element",
+exports[`react/react-in-jsx-scope correct 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "react/react-in-jsx-scope.correct.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [],
+  "warningCount": 0,
+}
+`;
+
+exports[`react/react-in-jsx-scope incorrect 1`] = `
+Object {
+  "errorCount": 1,
+  "filePath": "react/react-in-jsx-scope.incorrect.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [
+    Object {
+      "column": 8,
+      "endColumn": 13,
+      "endLine": 1,
+      "line": 1,
+      "message": "'React' is defined but never used.",
+      "messageId": "unusedVar",
+      "nodeType": "Identifier",
+      "ruleId": "no-unused-vars",
+      "severity": 2,
     },
-    "line": 2,
-    "message": "The variable \`el\` should be named \`element\`. A more descriptive name will do too.",
-    "nodeType": "Identifier",
-    "ruleId": "unicorn/prevent-abbreviations",
-    "severity": 2,
-  },
-]
-`;
+  ],
+  "source": "import React from 'react'
 
-exports[`index should generate error messages 4`] = `Array []`;
+export default function App() {
+  return (
+    <div>
+      React does not need to be in scope.
+    </div>
+  )
+}
+",
+  "warningCount": 0,
+}
+`;
