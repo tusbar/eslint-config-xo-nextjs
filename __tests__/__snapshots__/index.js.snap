@@ -60,6 +60,49 @@ Object {
 }
 `;
 
+exports[`react/jsx-no-duplicate-props correct 1`] = `
+Object {
+  "errorCount": 0,
+  "filePath": "react/jsx-no-duplicate-props.correct.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [],
+  "warningCount": 0,
+}
+`;
+
+exports[`react/jsx-no-duplicate-props incorrect 1`] = `
+Object {
+  "errorCount": 1,
+  "filePath": "react/jsx-no-duplicate-props.incorrect.js",
+  "fixableErrorCount": 0,
+  "fixableWarningCount": 0,
+  "messages": Array [
+    Object {
+      "column": 7,
+      "endColumn": 60,
+      "endLine": 5,
+      "line": 5,
+      "message": "No duplicate props allowed",
+      "messageId": "noDuplicateProps",
+      "nodeType": "JSXAttribute",
+      "ruleId": "react/jsx-no-duplicate-props",
+      "severity": 2,
+    },
+  ],
+  "source": "export default function App() {
+  return (
+    <div
+      className='value'
+      className='This should error as the case is the same'
+    />
+  )
+}
+",
+  "warningCount": 0,
+}
+`;
+
 exports[`react/react-in-jsx-scope correct 1`] = `
 Object {
   "errorCount": 0,
