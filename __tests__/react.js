@@ -41,6 +41,9 @@ describe('react/react-in-jsx-scope', () => {
 })
 
 describe('react/style-prop-object', () => {
+  // This rule has moved to eslint-config-xo-react:
+  // https://github.com/xojs/eslint-config-xo-react/pull/29
+
   it('correct', async () => {
     const result = await lintFixture('react/style-prop-object.correct.js')
 

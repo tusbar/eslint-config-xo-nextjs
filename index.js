@@ -73,12 +73,6 @@ module.exports = {
       forbidDefaultForRequired: true,
       ignoreFunctionalComponents: true
     }],
-    'react/style-prop-object': ['error', {
-      allow: [
-        // This allows react-intl’s <FormattedNumber value={0.42} style='percent' />
-        'FormattedNumber'
-      ]
-    }],
 
     // Next.js
     '@next/next/no-css-tags': 'error',
