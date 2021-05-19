@@ -623,10 +623,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@next/eslint-plugin-next@^10.2.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-10.2.0.tgz#296faf16a3132b12eceefc3215cb3a7676bcc06d"
-  integrity sha512-FaW/mZrRwbHz10JmWV/JpK+TJpfB3EWTiJulKa1oJgLjOBaWND3PwmuBkQcBwGEE8vEZjsHpMPA8hToQA73dPw==
+"@next/eslint-plugin-next@^10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-10.2.1.tgz#92be15ae81137637da1f0c299571551f4d17f098"
+  integrity sha512-aj0Hgiz7E6vXeUvqt6sUD5A8SMIdwWb9s/ASFWW/aXGinMFQKdKKUj86H0O8R6/wJye+3hDplGeJgoF21KHBeA==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
