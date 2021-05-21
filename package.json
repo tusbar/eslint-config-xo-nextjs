@@ -60,7 +60,7 @@
     "jest-junit": "^12.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "xo": "^0.39.1"
+    "xo": "^0.40.1"
   },
   "jest": {
     "testMatch": [
@@ -81,6 +81,9 @@
     "ignores": [
       "__tests__/__fixtures__/**"
     ],
+    "rules": {
+      "unicorn/prefer-module": "off"
+    },
     "overrides": [
       {
         "files": "__tests__/*.js",
