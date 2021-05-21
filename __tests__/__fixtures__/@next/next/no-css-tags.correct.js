@@ -1,16 +1,20 @@
-export default function Page() {
-  const path = '/style.css'
+import Document, {Head} from 'next/document'
 
-  return (
-    <div>
-      <link
-        rel='foo' // The rule only checks for rel='stylesheet'
-        href='/style.css'
-      />
-      <link
-        rel='stylesheet'
-        href={path} // The rule only checks Literals
-      />
-    </div>
-  )
+const path = '/style.css'
+
+export default class Doc extends Document {
+  render() {
+    return (
+      <Head>
+        <link
+          rel='foo' // The rule only checks for rel='stylesheet'
+          href='/style.css'
+        />
+        <link
+          rel='stylesheet'
+          href={path} // The rule only checks Literals
+        />
+      </Head>
+    )
+  }
 }
