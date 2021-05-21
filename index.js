@@ -1,10 +1,9 @@
 'use strict'
 
 module.exports = {
-  extends: 'xo-react',
-
-  plugins: [
-    '@next/eslint-plugin-next'
+  extends: [
+    'xo-react',
+    'plugin:@next/next/recommended'
   ],
 
   rules: {
@@ -96,11 +95,6 @@ module.exports = {
         forbidDefaultForRequired: true,
         ignoreFunctionalComponents: true
       }
-    ],
-
-    // Next.js
-    '@next/next/no-css-tags': 'error',
-    '@next/next/no-sync-scripts': 'error',
-    '@next/next/no-unwanted-polyfillio': 'error'
+    ]
   }
 }
