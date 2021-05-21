@@ -81,6 +81,9 @@
     "ignores": [
       "__tests__/__fixtures__/**"
     ],
+    "rules": {
+      "unicorn/prefer-module": "off"
+    },
     "overrides": [
       {
         "files": "__tests__/*.js",
