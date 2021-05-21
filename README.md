@@ -3,7 +3,6 @@
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [xo](https://github.com/xojs/xo) or [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
 [![npm version](https://badgen.net/npm/v/eslint-config-xo-nextjs)](https://www.npmjs.com/package/eslint-config-xo-nextjs)
-[![dependencies Status](https://badgen.net/david/dep/tusbar/eslint-config-xo-nextjs)](https://david-dm.org/tusbar/eslint-config-xo-nextjs)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
 ## Install
