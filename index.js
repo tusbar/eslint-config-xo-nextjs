@@ -95,6 +95,10 @@ module.exports = {
         forbidDefaultForRequired: true,
         ignoreFunctionalComponents: true
       }
-    ]
+    ],
+
+    // Unicorn
+    // This disables the prefer-module as next.config.js loading does not support ESM yet.
+    'unicorn/prefer-module': 'off'
   }
 }
