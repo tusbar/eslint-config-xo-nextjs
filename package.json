@@ -49,7 +49,7 @@
     "react": ">=17"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^10.2.2",
+    "@next/eslint-plugin-next": "^10.2.3",
     "eslint-config-xo-react": "^0.25.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.0.8"
