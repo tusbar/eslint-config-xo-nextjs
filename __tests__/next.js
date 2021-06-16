@@ -87,7 +87,7 @@ describe('@next/next/no-sync-scripts', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-sync-scripts')
-    expect(result.messages[0].message).toBe('Synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts.')
+    expect(result.messages[0].message).toBe('External synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts.')
   })
 })
 
