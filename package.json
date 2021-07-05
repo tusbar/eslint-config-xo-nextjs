@@ -60,7 +60,7 @@
     "jest-junit": "^12.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "xo": "^0.40.2"
+    "xo": "^0.41.0"
   },
   "jest": {
     "testMatch": [
