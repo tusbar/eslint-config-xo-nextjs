@@ -54,7 +54,7 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
-    "jest": "^27.0.4",
+    "jest": "^27.0.6",
     "jest-junit": "^12.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
