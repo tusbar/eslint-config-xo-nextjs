@@ -45,7 +45,6 @@
     "nextjs"
   ],
   "peerDependencies": {
-    "eslint": ">=7",
     "react": ">=17"
   },
   "dependencies": {
@@ -55,7 +54,6 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
     "jest": "^27.0.4",
     "jest-junit": "^12.2.0",
     "prop-types": "^15.7.2",

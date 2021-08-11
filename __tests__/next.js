@@ -1,4 +1,4 @@
-const lintFixture = require('../lib/lint-fixture')
+const lintFixture = require('../lib/lint-fixture.js')
 
 describe('@next/next/google-font-display', () => {
   it('correct', async () => {
@@ -16,7 +16,7 @@ describe('@next/next/google-font-display', () => {
       'Display parameter is missing. See https://nextjs.org/docs/messages/google-font-display.',
       'Block behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
       'Auto behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
-      'Fallback behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.'
+      'Fallback behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
     ].entries()) {
       expect(result.messages[index].ruleId).toBe('@next/next/google-font-display')
       expect(result.messages[index].message).toBe(errorMessage)

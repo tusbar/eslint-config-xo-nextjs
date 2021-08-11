@@ -1,4 +1,4 @@
-const lintFixture = require('../lib/lint-fixture')
+const lintFixture = require('../lib/lint-fixture.js')
 
 describe('react/jsx-closing-bracket-location', () => {
   it('correct', async () => {

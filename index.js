@@ -3,7 +3,7 @@
 module.exports = {
   extends: [
     'xo-react',
-    'plugin:@next/next/recommended'
+    'plugin:@next/next/recommended',
   ],
 
   rules: {
@@ -15,8 +15,8 @@ module.exports = {
         ts: 'never',
         tsx: 'never',
         js: 'never',
-        jsx: 'never'
-      }
+        jsx: 'never',
+      },
     ],
 
     'node/file-extension-in-import': [
@@ -26,37 +26,37 @@ module.exports = {
         '.ts': 'never',
         '.tsx': 'never',
         '.js': 'never',
-        '.jsx': 'never'
-      }
+        '.jsx': 'never',
+      },
     ],
 
     // JSX
     'jsx-quotes': [
       'error',
-      'prefer-single'
+      'prefer-single',
     ],
 
     // React
     'react/boolean-prop-naming': [
       'warn',
       {
-        validateNested: true
-      }
+        validateNested: true,
+      },
     ],
     'react/forbid-component-props': 'off',
     'react/function-component-definition': [
       'error',
       {
         namedComponents: 'function-declaration',
-        unnamedComponents: 'arrow-function'
-      }
+        unnamedComponents: 'arrow-function',
+      },
     ],
     'react/jsx-closing-bracket-location': [
       'error',
       {
         nonEmpty: 'tag-aligned',
-        selfClosing: false
-      }
+        selfClosing: false,
+      },
     ],
     'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-brace-presence': [
@@ -64,8 +64,8 @@ module.exports = {
       {
         props: 'never',
         // This allows <style jsx>{`…`}</style>
-        children: 'ignore'
-      }
+        children: 'ignore',
+      },
     ],
     'react/jsx-first-prop-new-line': 'off',
     'react/jsx-handler-names': 'off',
@@ -76,16 +76,16 @@ module.exports = {
       {
         closingSlash: 'never',
         beforeSelfClosing: 'always',
-        afterOpening: 'never'
-      }
+        afterOpening: 'never',
+      },
     ],
     'react/jsx-no-duplicate-props': [
       'error',
       {
         // This allows material-ui’s usage of inputProps and InputProps together:
         // <TextField inputProps={{…}} InputProps={{…}} /> errors otherwise.
-        ignoreCase: false
-      }
+        ignoreCase: false,
+      },
     ],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -93,12 +93,12 @@ module.exports = {
       'warn',
       {
         forbidDefaultForRequired: true,
-        ignoreFunctionalComponents: true
-      }
+        ignoreFunctionalComponents: true,
+      },
     ],
 
     // Unicorn
     // This disables the prefer-module as next.config.js loading does not support ESM yet.
-    'unicorn/prefer-module': 'off'
-  }
+    'unicorn/prefer-module': 'off',
+  },
 }
