@@ -74,7 +74,7 @@ jobs:
       - *attach_workspace
 
       - install-nodejs:
-          key: v1-eslint-config-xo-nextjs
+          key: v2-eslint-config-xo-nextjs
 
   lint:
     <<: *nodejs_container
@@ -82,7 +82,7 @@ jobs:
       - *attach_workspace
 
       - restore-nodejs:
-          key: v1-eslint-config-xo-nextjs
+          key: v2-eslint-config-xo-nextjs
 
       - run:
           name: Lint JavaScript
@@ -94,7 +94,7 @@ jobs:
       - *attach_workspace
 
       - restore-nodejs:
-          key: v1-eslint-config-xo-nextjs
+          key: v2-eslint-config-xo-nextjs
 
       - run:
           name: Run tests
