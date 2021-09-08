@@ -55,7 +55,7 @@ describe('@next/next/link-passhref', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/link-passhref')
-    expect(result.messages[0].message).toBe('passHref is missing. See https://nextjs.org/docs/messages/link-passhref.')
+    expect(result.messages[0].message).toBe('passHref is missing. See https://nextjs.org/docs/messages/link-passhref')
   })
 })
 

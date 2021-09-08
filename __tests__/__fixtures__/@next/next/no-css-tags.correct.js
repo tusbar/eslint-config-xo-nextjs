@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-document-import-in-page */
+
 import Document, {Head} from 'next/document'
 
 const path = '/style.css'
