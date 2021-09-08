@@ -9,8 +9,9 @@
   "engines": {
     "node": ">=12"
   },
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "files": [
     "index.js",
@@ -54,16 +55,17 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
-    "jest": "^27.0.4",
+    "jest": "^27.1.1",
     "jest-junit": "^12.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "xo": "^0.40.2"
+    "xo": "^0.44.0"
   },
   "jest": {
     "testMatch": [
       "<rootDir>/__tests__/*.js"
     ],
+    "transform": {},
     "collectCoverage": true,
     "collectCoverageFrom": [
       "index.js"

@@ -1,4 +1,4 @@
-const lintFixture = require('../lib/lint-fixture.js')
+import lintFixture from '../lib/lint-fixture.js'
 
 describe('jsx-quotes', () => {
   it('correct', async () => {
