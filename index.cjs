@@ -5,29 +5,6 @@ module.exports = {
   ],
 
   rules: {
-    // Extensions
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        ts: 'never',
-        tsx: 'never',
-        js: 'never',
-        jsx: 'never',
-      },
-    ],
-
-    'node/file-extension-in-import': [
-      'error',
-      'always',
-      {
-        '.ts': 'never',
-        '.tsx': 'never',
-        '.js': 'never',
-        '.jsx': 'never',
-      },
-    ],
-
     // JSX
     'jsx-quotes': [
       'error',
