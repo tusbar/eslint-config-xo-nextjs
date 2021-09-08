@@ -5,6 +5,11 @@
 [![npm version](https://badgen.net/npm/v/eslint-config-xo-nextjs)](https://www.npmjs.com/package/eslint-config-xo-nextjs)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
+## CI
+
+[![Tests](https://github.com/tusbar/eslint-config-xo-nextjs/actions/workflows/tests.yml/badge.svg)](https://github.com/tusbar/eslint-config-xo-nextjs/actions/workflows/tests.yml)
+[![Release](https://github.com/tusbar/eslint-config-xo-nextjs/actions/workflows/release.yml/badge.svg)](https://github.com/tusbar/eslint-config-xo-nextjs/actions/workflows/release.yml)
+
 ## Install
 
 ```
