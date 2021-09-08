@@ -14,8 +14,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "files": [
-    "index.js",
-    "space.js"
+    "index.js"
   ],
   "keywords": [
     "react",
