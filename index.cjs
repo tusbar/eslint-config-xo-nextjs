@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   extends: [
     'xo-react',
     'plugin:@next/next/recommended',
@@ -100,5 +100,3 @@ const config = {
     'unicorn/prefer-module': 'off',
   },
 }
-
-export default config

@@ -2,7 +2,7 @@
   "name": "eslint-config-xo-nextjs",
   "version": "4.0.0",
   "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
-  "main": "index.js",
+  "main": "index.cjs",
   "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git",
   "author": "Bertrand Marron",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "files": [
-    "index.js"
+    "index.cjs"
   ],
   "keywords": [
     "react",
