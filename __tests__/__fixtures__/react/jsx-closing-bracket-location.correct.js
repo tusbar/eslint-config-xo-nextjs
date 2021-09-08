@@ -6,7 +6,7 @@ export default function Component() {
       <span
         className='long-line'
         style={{
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       />
     </div>
