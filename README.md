@@ -1,4 +1,4 @@
-# eslint-config-xo-nextjs [![CircleCI](https://circleci.com/gh/tusbar/eslint-config-xo-nextjs.svg?style=svg)](https://circleci.com/gh/tusbar/eslint-config-xo-nextjs)
+# eslint-config-xo-nextjs
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [xo](https://github.com/xojs/xo) or [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
