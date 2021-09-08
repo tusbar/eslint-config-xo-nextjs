@@ -55,10 +55,12 @@
     "eslint-plugin-react-hooks": "^4.0.8"
   },
   "devDependencies": {
+    "@bizon/semantic-release-config": "^1.0.1",
     "jest": "^27.1.1",
     "jest-junit": "^12.2.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "semantic-release": "^17.4.7",
     "xo": "^0.44.0"
   },
   "jest": {
@@ -92,5 +94,8 @@
         ]
       }
     ]
+  },
+  "release": {
+    "extends": "@bizon/semantic-release-config"
   }
 }
