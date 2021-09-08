@@ -3,6 +3,7 @@
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [xo](https://github.com/xojs/xo) or [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
 
 [![npm version](https://badgen.net/npm/v/eslint-config-xo-nextjs)](https://www.npmjs.com/package/eslint-config-xo-nextjs)
+[![codecov](https://codecov.io/gh/tusbar/eslint-config-xo-nextjs/branch/master/graph/badge.svg?token=b38PYmr1TW)](https://codecov.io/gh/tusbar/eslint-config-xo-nextjs)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
 ## CI
