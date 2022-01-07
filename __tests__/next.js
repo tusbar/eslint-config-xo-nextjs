@@ -38,7 +38,9 @@ describe('@next/next/google-font-preconnect', () => {
 
     for (const message of result.messages) {
       expect(message.ruleId).toBe('@next/next/google-font-preconnect')
-      expect(message.message).toBe('Preconnect is missing. See https://nextjs.org/docs/messages/google-font-preconnect.')
+      expect(message.message).toBe(
+        'Preconnect is missing. See https://nextjs.org/docs/messages/google-font-preconnect.',
+      )
     }
   })
 })
@@ -55,7 +57,9 @@ describe('@next/next/link-passhref', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/link-passhref')
-    expect(result.messages[0].message).toBe('passHref is missing. See https://nextjs.org/docs/messages/link-passhref')
+    expect(result.messages[0].message).toBe(
+      'passHref is missing. See https://nextjs.org/docs/messages/link-passhref',
+    )
   })
 })
 
@@ -71,7 +75,9 @@ describe('@next/next/no-css-tags', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-css-tags')
-    expect(result.messages[0].message).toBe('Do not include stylesheets manually. See: https://nextjs.org/docs/messages/no-css-tags.')
+    expect(result.messages[0].message).toBe(
+      'Do not include stylesheets manually. See: https://nextjs.org/docs/messages/no-css-tags.',
+    )
   })
 })
 
@@ -87,7 +93,9 @@ describe('@next/next/no-sync-scripts', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-sync-scripts')
-    expect(result.messages[0].message).toBe('External synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts.')
+    expect(result.messages[0].message).toBe(
+      'External synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts.',
+    )
   })
 })
 
@@ -103,6 +111,8 @@ describe('@next/next/no-unwanted-polyfillio', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-unwanted-polyfillio')
-    expect(result.messages[0].message).toBe('No duplicate polyfills from Polyfill.io are allowed. es2019 is already shipped with Next.js. See: https://nextjs.org/docs/messages/no-unwanted-polyfillio.')
+    expect(result.messages[0].message).toBe(
+      'No duplicate polyfills from Polyfill.io are allowed. es2019 is already shipped with Next.js. See: https://nextjs.org/docs/messages/no-unwanted-polyfillio.',
+    )
   })
 })

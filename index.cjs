@@ -1,15 +1,21 @@
 module.exports = {
-  extends: [
-    'xo-react',
-    'plugin:@next/next/recommended',
-  ],
+  extends: ['xo-react', 'plugin:@next/next/recommended'],
 
   rules: {
-    // JSX
-    'jsx-quotes': [
+    // Node
+    'node/file-extension-in-import': [
       'error',
-      'prefer-single',
+      'always',
+      {
+        '.ts': 'never',
+        '.tsx': 'never',
+        '.js': 'never',
+        '.jsx': 'never',
+      },
     ],
+
+    // JSX
+    'jsx-quotes': ['error', 'prefer-single'],
 
     // React
     'react/boolean-prop-naming': [

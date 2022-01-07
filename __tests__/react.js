@@ -36,7 +36,7 @@ describe('react/react-in-jsx-scope', () => {
 
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('no-unused-vars')
-    expect(result.messages[0].message).toBe('\'React\' is defined but never used.')
+    expect(result.messages[0].message).toBe("'React' is defined but never used.")
   })
 })
 

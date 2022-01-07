@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-document-import-in-page */
+/* eslint-disable @next/next/no-page-custom-font */
 
 import Document, {Head} from 'next/document'
 
