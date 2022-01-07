@@ -54,8 +54,3 @@ jobs:
         with:
           name: jest-test-results
           path: reports/tests/junit.xml
-
-      - name: Upload code coverage to codecov
-        uses: codecov/codecov-action@v2
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
