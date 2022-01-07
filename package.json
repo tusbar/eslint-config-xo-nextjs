@@ -71,6 +71,7 @@
   "xo": {
     "semicolon": false,
     "space": 2,
+    "prettier": true,
     "ignores": [
       "__tests__/__fixtures__/**"
     ],
@@ -85,6 +86,9 @@
         ]
       }
     ]
+  },
+  "prettier": {
+    "printWidth": 100
   },
   "release": {
     "extends": "@bizon/semantic-release-config"
