@@ -9,7 +9,7 @@ export default class Doc extends Document {
     return (
       <Head>
         <link
-          rel='foo' // The rule only checks for rel='stylesheet'
+          rel='canonical' // The rule only checks for rel='stylesheet'
           href='/style.css'
         />
         <link
