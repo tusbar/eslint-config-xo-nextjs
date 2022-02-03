@@ -13,10 +13,10 @@ describe('@next/next/google-font-display', () => {
     expect(result.messages).toHaveLength(4)
 
     for (const [index, errorMessage] of [
-      'Display parameter is missing. See https://nextjs.org/docs/messages/google-font-display.',
-      'Block behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
-      'Auto behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
-      'Fallback behavior is not recommended. See https://nextjs.org/docs/messages/google-font-display.',
+      'Display parameter is missing. See: https://nextjs.org/docs/messages/google-font-display',
+      'Block behavior is not recommended. See: https://nextjs.org/docs/messages/google-font-display',
+      'Auto behavior is not recommended. See: https://nextjs.org/docs/messages/google-font-display',
+      'Fallback behavior is not recommended. See: https://nextjs.org/docs/messages/google-font-display',
     ].entries()) {
       expect(result.messages[index].ruleId).toBe('@next/next/google-font-display')
       expect(result.messages[index].message).toBe(errorMessage)
@@ -39,7 +39,7 @@ describe('@next/next/google-font-preconnect', () => {
     for (const message of result.messages) {
       expect(message.ruleId).toBe('@next/next/google-font-preconnect')
       expect(message.message).toBe(
-        'Preconnect is missing. See https://nextjs.org/docs/messages/google-font-preconnect.',
+        'Preconnect is missing. See: https://nextjs.org/docs/messages/google-font-preconnect',
       )
     }
   })
@@ -58,7 +58,7 @@ describe('@next/next/link-passhref', () => {
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/link-passhref')
     expect(result.messages[0].message).toBe(
-      'passHref is missing. See https://nextjs.org/docs/messages/link-passhref',
+      'passHref is missing. See: https://nextjs.org/docs/messages/link-passhref',
     )
   })
 })
@@ -76,7 +76,7 @@ describe('@next/next/no-css-tags', () => {
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-css-tags')
     expect(result.messages[0].message).toBe(
-      'Do not include stylesheets manually. See: https://nextjs.org/docs/messages/no-css-tags.',
+      'Do not include stylesheets manually. See: https://nextjs.org/docs/messages/no-css-tags',
     )
   })
 })
@@ -94,7 +94,7 @@ describe('@next/next/no-sync-scripts', () => {
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-sync-scripts')
     expect(result.messages[0].message).toBe(
-      'External synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts.',
+      'External synchronous scripts are forbidden. See: https://nextjs.org/docs/messages/no-sync-scripts',
     )
   })
 })
@@ -112,7 +112,7 @@ describe('@next/next/no-unwanted-polyfillio', () => {
     expect(result.messages).toHaveLength(1)
     expect(result.messages[0].ruleId).toBe('@next/next/no-unwanted-polyfillio')
     expect(result.messages[0].message).toBe(
-      'No duplicate polyfills from Polyfill.io are allowed. es2019 is already shipped with Next.js. See: https://nextjs.org/docs/messages/no-unwanted-polyfillio.',
+      'No duplicate polyfills from Polyfill.io are allowed. es2019 is already shipped with Next.js. See: https://nextjs.org/docs/messages/no-unwanted-polyfillio',
     )
   })
 })
