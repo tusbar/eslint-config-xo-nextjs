@@ -25,13 +25,6 @@ module.exports = {
       },
     ],
     'react/forbid-component-props': 'off',
-    'react/function-component-definition': [
-      'error',
-      {
-        namedComponents: 'function-declaration',
-        unnamedComponents: 'arrow-function',
-      },
-    ],
     'react/jsx-closing-bracket-location': [
       'error',
       {

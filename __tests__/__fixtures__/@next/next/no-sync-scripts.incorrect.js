@@ -1,7 +1,5 @@
-export default function Page() {
-  return (
-    <div>
-      <script src='/script.js' />
-    </div>
-  )
-}
+export const Page = () => (
+  <div>
+    <script src='/script.js' />
+  </div>
+)

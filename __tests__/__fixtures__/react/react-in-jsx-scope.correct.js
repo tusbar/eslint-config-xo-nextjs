@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-export default function App() {
+export const App = () => {
   const [state] = useState()
 
   return (
