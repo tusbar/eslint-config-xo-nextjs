@@ -1,15 +1,11 @@
 import Link from 'next/link'
 
-function CustomLink({...props}) {
-  return (
-    <a {...props} rel='noreferrer' />
-  )
-}
+const CustomLink = ({...props}) => (
+  <a {...props} rel='noreferrer' />
+)
 
-export default function Component() {
-  return (
-    <Link href='/foo'>
-      <CustomLink>custom</CustomLink>
-    </Link>
-  )
-}
+export const Component = () => (
+  <Link href='/foo'>
+    <CustomLink>custom</CustomLink>
+  </Link>
+)
