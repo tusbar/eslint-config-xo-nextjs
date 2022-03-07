@@ -50,7 +50,7 @@
   "dependencies": {
     "@next/eslint-plugin-next": "^12.0.10",
     "eslint-config-xo-react": "^0.26.0",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react": "^7.29.3",
     "eslint-plugin-react-hooks": "^4.3.0"
   },
   "devDependencies": {
