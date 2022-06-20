@@ -3,7 +3,7 @@ module.exports = {
 
   rules: {
     // Node
-    'node/file-extension-in-import': [
+    'n/file-extension-in-import': [
       'error',
       'always',
       {
@@ -25,6 +25,13 @@ module.exports = {
       },
     ],
     'react/forbid-component-props': 'off',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'react/jsx-closing-bracket-location': [
       'error',
       {

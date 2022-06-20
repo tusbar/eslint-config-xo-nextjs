@@ -48,19 +48,19 @@
     "react": ">=17"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^12.1.0",
-    "eslint-config-xo-react": "^0.26.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "@next/eslint-plugin-next": "^12.1.6",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^1.1.0",
-    "jest": "^27.5.1",
-    "jest-junit": "^13.0.0",
+    "jest": "^28.1.1",
+    "jest-junit": "^13.2.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "semantic-release": "^19.0.2",
-    "xo": "^0.45.0"
+    "semantic-release": "^19.0.3",
+    "xo": "^0.50.0"
   },
   "jest": {
     "testMatch": [

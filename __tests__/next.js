@@ -45,24 +45,6 @@ describe('@next/next/google-font-preconnect', () => {
   })
 })
 
-describe('@next/next/link-passhref', () => {
-  it('correct', async () => {
-    const result = await lintFixture('@next/next/link-passhref.correct.js')
-
-    expect(result.errorCount).toBe(0)
-  })
-
-  it('incorrect', async () => {
-    const result = await lintFixture('@next/next/link-passhref.incorrect.js')
-
-    expect(result.messages).toHaveLength(1)
-    expect(result.messages[0].ruleId).toBe('@next/next/link-passhref')
-    expect(result.messages[0].message).toBe(
-      'passHref is missing. See: https://nextjs.org/docs/messages/link-passhref',
-    )
-  })
-})
-
 describe('@next/next/no-css-tags', () => {
   it('correct', async () => {
     const result = await lintFixture('@next/next/no-css-tags.correct.js')
