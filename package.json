@@ -60,7 +60,7 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "semantic-release": "^19.0.3",
-    "xo": "^0.51.0"
+    "xo": "^0.52.3"
   },
   "jest": {
     "testMatch": [
