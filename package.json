@@ -55,11 +55,12 @@
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^1.2.0",
+    "eslint-config-xo-bizon": "^1.1.1",
     "jest": "^28.1.3",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "semantic-release": "^19.0.5",
-    "xo": "^0.51.0"
+    "xo": "^0.52.4"
   },
   "jest": {
     "testMatch": [
@@ -68,15 +69,13 @@
     "transform": {}
   },
   "xo": {
+    "extends": "xo-bizon",
     "semicolon": false,
     "space": 2,
     "prettier": true,
     "ignores": [
       "__tests__/__fixtures__/**"
     ],
-    "rules": {
-      "unicorn/prefer-module": "off"
-    },
     "overrides": [
       {
         "files": "__tests__/*.js",
