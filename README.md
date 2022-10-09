@@ -40,6 +40,7 @@ $ yarn add --dev eslint-config-xo-nextjs
 - [eslint-config-xo](https://github.com/xojs/eslint-config-xo) - ESLint shareable config for XO
 - [eslint-config-xo-react](https://github.com/xojs/eslint-config-xo-react) - ESLint shareable config for React to be used with eslint-config-xo
 - [@next/eslint-plugin-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next) - ESLint plugin for Next.js projects
+- [eslint-config-xo-bizon](http://github.com/bizon/eslint-config-xo-bizon) - Better defaults, often used alongside this plugin
 
 
 ## License

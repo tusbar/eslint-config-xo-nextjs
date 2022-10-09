@@ -2,18 +2,6 @@ module.exports = {
   extends: ['xo-react', 'plugin:@next/next/recommended'],
 
   rules: {
-    // Node
-    'n/file-extension-in-import': [
-      'error',
-      'always',
-      {
-        '.ts': 'never',
-        '.tsx': 'never',
-        '.js': 'never',
-        '.jsx': 'never',
-      },
-    ],
-
     // JSX
     'jsx-quotes': ['error', 'prefer-single'],
 
@@ -77,9 +65,5 @@ module.exports = {
         ignoreFunctionalComponents: true,
       },
     ],
-
-    // Unicorn
-    // This disables the prefer-module as next.config.js loading does not support ESM yet.
-    'unicorn/prefer-module': 'off',
   },
 }
