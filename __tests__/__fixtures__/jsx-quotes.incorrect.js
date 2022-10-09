@@ -1,5 +1,5 @@
 export const IncorrectComponent = () => (
-  <div one="This is not ok">
+  <div id="This is not ok">
     Some invalid quotes
   </div>
 )

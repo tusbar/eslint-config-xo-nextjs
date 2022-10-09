@@ -1,5 +1,5 @@
 export const CorrectComponent = () => (
-  <div one='cool' two="This is 'ok' though">
+  <div id='cool' className="This is 'ok' though">
     Single quotes everywhere, almost.
   </div>
 )
