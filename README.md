@@ -13,7 +13,7 @@
 ## Install
 
 ```
-$ yarn add --dev eslint-config-xo-nextjs
+$ pnpm add -D eslint-config-xo-nextjs
 ```
 
 ### Example usage with XO
@@ -33,7 +33,6 @@ $ yarn add --dev eslint-config-xo-nextjs
 }
 ```
 
-
 ## Related
 
 - [XO](https://github.com/xojs/xo)
@@ -42,11 +41,9 @@ $ yarn add --dev eslint-config-xo-nextjs
 - [@next/eslint-plugin-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next) - ESLint plugin for Next.js projects
 - [eslint-config-xo-bizon](http://github.com/bizon/eslint-config-xo-bizon) - Better defaults, often used alongside this plugin
 
-
 ## License
 
 MIT © [Bertrand Marron](https://github.com/tusbar)
-
 
 ## Miscellaneous
 
