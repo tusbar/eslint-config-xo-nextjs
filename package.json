@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-nextjs",
-  "version": "5.1.2",
+  "version": "5.2.0",
   "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
   "main": "index.cjs",
   "repository": "git@github.com:tusbar/eslint-config-xo-nextjs.git",
