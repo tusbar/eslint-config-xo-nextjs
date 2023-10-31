@@ -65,5 +65,9 @@ module.exports = {
         ignoreFunctionalComponents: true,
       },
     ],
+
+    // Unicorn
+    // Next.js does not support node protocol imports yet
+    'unicorn/prefer-node-protocol': 'off',
   },
 }
