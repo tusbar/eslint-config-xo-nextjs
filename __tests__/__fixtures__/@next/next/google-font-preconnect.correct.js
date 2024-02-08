@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-document-import-in-page */
+/* eslint-disable @next/next/no-document-import-in-page, @next/next/no-page-custom-font */
 
-import Document, {Head} from 'next/document'
+import NextDocument, {Head} from 'next/document'
 
-export default class Doc extends Document {
+export default class Document extends NextDocument {
   render() {
     return (
       <Head>
