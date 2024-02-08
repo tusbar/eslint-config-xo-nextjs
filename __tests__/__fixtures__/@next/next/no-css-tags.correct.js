@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-document-import-in-page */
 
-import Document, {Head} from 'next/document'
+import NextDocument, {Head} from 'next/document'
 
 const path = '/style.css'
 
-export default class Doc extends Document {
+export default class Document extends NextDocument {
   render() {
     return (
       <Head>
