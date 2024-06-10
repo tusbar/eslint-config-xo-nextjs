@@ -51,7 +51,7 @@
     "@next/eslint-plugin-next": "^14.2.2",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.34.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.2"
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^2.1.0",
