@@ -8,7 +8,10 @@ const FormattedNumber = ({value, style}) => (
   </div>
 )
 
-FormattedNumber.propTypes = {value: PropTypes.number, style: PropTypes.string}
+FormattedNumber.propTypes = {
+  value: PropTypes.number.isRequired,
+  style: PropTypes.string.isRequired,
+}
 
 export const App = () => (
   <FormattedNumber value={0.42} style='percentage' />
