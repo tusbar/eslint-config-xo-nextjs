@@ -8,7 +8,10 @@ const TextField = ({inputProps, InputProps}) => (
   </div>
 )
 
-TextField.propTypes = {inputProps: PropTypes.object, InputProps: PropTypes.object}
+TextField.propTypes = {
+  inputProps: PropTypes.object.isRequired,
+  InputProps: PropTypes.object.isRequired,
+}
 
 export const App = () => (
   <TextField

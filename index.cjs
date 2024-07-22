@@ -62,7 +62,7 @@ module.exports = {
       'warn',
       {
         forbidDefaultForRequired: true,
-        ignoreFunctionalComponents: true,
+        functions: 'defaultArguments',
       },
     ],
 
