@@ -13,13 +13,13 @@ importers:
         version: 14.2.13
       eslint-config-xo-react:
         specifier: ^0.27.0
-        version: 0.27.0(eslint-plugin-react-hooks@4.6.2(eslint@8.57.0))(eslint-plugin-react@7.37.1(eslint@8.57.0))(eslint@8.57.0)
+        version: 0.27.0(eslint-plugin-react-hooks@5.0.0(eslint@8.57.0))(eslint-plugin-react@7.37.1(eslint@8.57.0))(eslint@8.57.0)
       eslint-plugin-react:
         specifier: ^7.37.1
         version: 7.37.1(eslint@8.57.0)
       eslint-plugin-react-hooks:
-        specifier: ^4.6.2
-        version: 4.6.2(eslint@8.57.0)
+        specifier: ^5.0.0
+        version: 5.0.0(eslint@8.57.0)
     devDependencies:
       '@bizon/semantic-release-config':
         specifier: ^3.0.0
@@ -1432,11 +1432,11 @@ packages:
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
 
-  eslint-plugin-react-hooks@4.6.2:
-    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
+  eslint-plugin-react-hooks@5.0.0:
+    resolution: {integrity: sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==}
     engines: {node: '>=10'}
     peerDependencies:
-      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
   eslint-plugin-react@7.37.1:
     resolution: {integrity: sha512-xwTnwDqzbDRA8uJ7BMxPs/EXRB3i8ZfnOIp8BsxEQkT0nHPp+WWceqGgo6rKb9ctNi8GJLDT4Go5HAWELa/WMg==}
@@ -5229,11 +5229,11 @@ snapshots:
 
   eslint-config-xo-bizon@3.0.3: {}
 
-  eslint-config-xo-react@0.27.0(eslint-plugin-react-hooks@4.6.2(eslint@8.57.0))(eslint-plugin-react@7.37.1(eslint@8.57.0))(eslint@8.57.0):
+  eslint-config-xo-react@0.27.0(eslint-plugin-react-hooks@5.0.0(eslint@8.57.0))(eslint-plugin-react@7.37.1(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
       eslint-plugin-react: 7.37.1(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
+      eslint-plugin-react-hooks: 5.0.0(eslint@8.57.0)
 
   eslint-config-xo-typescript@5.0.0(@typescript-eslint/eslint-plugin@7.16.1(@typescript-eslint/parser@7.16.1(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3))(@typescript-eslint/parser@7.16.1(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3):
     dependencies:
@@ -5380,7 +5380,7 @@ snapshots:
     dependencies:
       eslint: 8.57.0
 
-  eslint-plugin-react-hooks@4.6.2(eslint@8.57.0):
+  eslint-plugin-react-hooks@5.0.0(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
 
