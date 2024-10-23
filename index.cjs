@@ -69,9 +69,9 @@ module.exports = {
     // Unicorn
     // Next.js does not support node protocol imports yet
     'unicorn/prefer-node-protocol': 'off',
-  },
 
-  // N
-  // Do not use the process import in Next.js
-  'n/prefer-global/process': 'off',
+    // N
+    // Do not use the process import in Next.js
+    'n/prefer-global/process': 'off',
+  },
 }
