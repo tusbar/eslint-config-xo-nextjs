@@ -1,9 +1,9 @@
 # eslint-config-xo-nextjs
 
-> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [xo](https://github.com/xojs/xo) or [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
+[![npm version](https://img.shields.io/npm/v/eslint-config-xo-nextjs)](https://www.npmjs.com/package/eslint-config-xo-nextjs)
+[![XO code style](https://img.shields.io/badge/code_style-xo-cyan)](https://github.com/xojs/xo)
 
-[![npm version](https://badgen.net/npm/v/eslint-config-xo-nextjs)](https://www.npmjs.com/package/eslint-config-xo-nextjs)
-[![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
+ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Next.js to be used with [xo](https://github.com/xojs/xo).
 
 ## CI
 
@@ -18,28 +18,41 @@ $ pnpm add -D eslint-config-xo-nextjs
 
 ### Example usage with XO
 
-```json
-{
-  "name": "my-awesome-project",
-  "devDependencies": {
-    "xo": "…",
-    "eslint-config-xo-nextjs": "…"
+Create a `xo.config.js` file in your project root with the following content:
+
+```js
+import xoNextjs from "eslint-config-xo-nextjs";
+
+/** @type {import('xo').FlatXoConfig} */
+export default [
+  ...xoNextjs,
+  {
+    space: 2,
+    semicolon: false,
   },
-  "xo": {
-    "extends": "xo-nextjs",
-    "semicolon": false,
-    "space": 2
-  }
-}
+];
+```
+
+Or in typescript:
+
+```ts
+import xoNextjs from "eslint-config-xo-nextjs";
+
+export default [
+  ...xoNextjs,
+  {
+    space: 2,
+    semicolon: false,
+  },
+] satisfies import("xo").FlatXoConfig;
 ```
 
 ## Related
 
 - [XO](https://github.com/xojs/xo)
-- [eslint-config-xo](https://github.com/xojs/eslint-config-xo) - ESLint shareable config for XO
 - [eslint-config-xo-react](https://github.com/xojs/eslint-config-xo-react) - ESLint shareable config for React to be used with eslint-config-xo
-- [@next/eslint-plugin-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next) - ESLint plugin for Next.js projects
 - [eslint-config-xo-bizon](http://github.com/bizon/eslint-config-xo-bizon) - Better defaults, often used alongside this plugin
+- [eslint-config-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next) - ESLint config for Next.js projects
 
 ## License
 
