@@ -10,11 +10,23 @@
     "node": ">=24"
   },
   "files": [
-    "index.js"
+    "dist"
   ],
-  "exports": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./space": {
+      "import": "./dist/space.js",
+      "types": "./dist/space.d.ts"
+    }
+  },
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "check:ts": "tsc --noEmit",
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "keywords": [
     "react",
@@ -41,7 +53,7 @@
     "enforce",
     "hint",
     "simple",
-    "zeit",
+    "vercel",
     "nextjs"
   ],
   "dependencies": {
@@ -50,21 +62,32 @@
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^3.1.0",
-    "eslint-config-xo-bizon": "^4.1.3",
+    "@swc/core": "^1.15.8",
+    "@swc/jest": "^0.2.39",
+    "@tsconfig/node24": "^24.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.7",
+    "eslint-config-xo-bizon": "^4.2.0",
     "jest": "^30.2.0",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "semantic-release": "^25.0.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
     "xo": "^1.2.3"
-  },
-  "jest": {
-    "testMatch": [
-      "<rootDir>/__tests__/*.spec.js"
-    ],
-    "transform": {}
   },
   "release": {
     "extends": "@bizon/semantic-release-config"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/space.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true
   },
   "packageManager": "pnpm@10.28.0+sha512.05df71d1421f21399e053fde567cea34d446fa02c76571441bfc1c7956e98e363088982d940465fd34480d4d90a0668bc12362f8aa88000a64e83d0b0e47be48"
 }

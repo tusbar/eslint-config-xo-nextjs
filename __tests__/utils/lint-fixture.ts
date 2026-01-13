@@ -4,13 +4,12 @@ import xo from 'xo'
 
 const fixturesPath = path.join('__tests__', '__fixtures__')
 
-async function lintFixture(fixture) {
+export async function lintFixture(fixture: string) {
   const {results} = await xo.lintFiles(fixture, {
     cwd: fixturesPath,
-    cache: false,
     space: 2,
     semicolon: false,
-    configPath: '../../index.js',
+    configPath: '../../src/space.ts',
   })
 
   return {
@@ -18,5 +17,3 @@ async function lintFixture(fixture) {
     filePath: fixture,
   }
 }
-
-export default lintFixture

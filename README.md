@@ -27,8 +27,7 @@ import xoNextjs from "eslint-config-xo-nextjs";
 export default [
   ...xoNextjs,
   {
-    space: 2,
-    semicolon: false,
+    // …
   },
 ];
 ```
@@ -41,8 +40,21 @@ import xoNextjs from "eslint-config-xo-nextjs";
 export default [
   ...xoNextjs,
   {
+    // …
+  },
+] satisfies import("xo").FlatXoConfig;
+```
+
+Use the space sub-config if you want 2 space indentation instead of tabs:
+
+```ts
+import xoNextJsSpace from "eslint-config-xo-nextjs/space";
+
+export default [
+  ...xoNextJsSpace,
+  {
     space: 2,
-    semicolon: false,
+    // …
   },
 ] satisfies import("xo").FlatXoConfig;
 ```
@@ -51,7 +63,6 @@ export default [
 
 - [XO](https://github.com/xojs/xo)
 - [eslint-config-xo-react](https://github.com/xojs/eslint-config-xo-react) - ESLint shareable config for React to be used with eslint-config-xo
-- [eslint-config-xo-bizon](http://github.com/bizon/eslint-config-xo-bizon) - Better defaults, often used alongside this plugin
 - [eslint-config-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next) - ESLint config for Next.js projects
 
 ## License

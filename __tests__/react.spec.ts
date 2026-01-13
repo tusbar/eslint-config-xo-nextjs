@@ -1,4 +1,4 @@
-import lintFixture from '../lib/lint-fixture.js'
+import {lintFixture} from './utils/lint-fixture.js'
 
 describe('react/jsx-closing-bracket-location', () => {
   it('correct', async () => {
