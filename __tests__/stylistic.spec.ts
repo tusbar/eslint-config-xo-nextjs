@@ -1,4 +1,4 @@
-import lintFixture from '../lib/lint-fixture.js'
+import {lintFixture} from './utils/lint-fixture.js'
 
 describe('@stylistic/jsx-quotes', () => {
   it('correct', async () => {

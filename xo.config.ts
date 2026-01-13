@@ -1,18 +1,15 @@
 import xoBizon from 'eslint-config-xo-bizon'
+import {type FlatXoConfig} from 'xo'
 
-import selfConfig from './index.js'
-
-/** @type {import('xo').FlatXoConfig} */
-const config = [
+export default [
   ...xoBizon,
-  ...selfConfig,
 
   {
     ignores: ['__tests__/__fixtures__/**'],
   },
 
   {
-    files: ['__tests__/**/*.spec.js'],
+    files: ['__tests__/**/*.spec.ts'],
     languageOptions: {
       globals: {
         describe: 'readonly',
@@ -21,6 +18,4 @@ const config = [
       },
     },
   },
-]
-
-export default config
+] satisfies FlatXoConfig

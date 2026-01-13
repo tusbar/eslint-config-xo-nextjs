@@ -1,10 +1,8 @@
 import eslintConfigNext from 'eslint-config-next'
-import eslintConfigXoReact from 'eslint-config-xo-react/space'
+import {type XoConfigItem} from 'xo'
 
-/** @type {import('xo').FlatXoConfig} */
-const config = [
-  ...eslintConfigXoReact,
-  ...eslintConfigNext,
+export const xoNextJsConfig: XoConfigItem[] = [
+  ...(eslintConfigNext as XoConfigItem[]),
 
   // React plugin
   {
@@ -96,5 +94,3 @@ const config = [
     },
   },
 ]
-
-export default config
