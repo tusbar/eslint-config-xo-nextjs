@@ -68,15 +68,16 @@ const config = [
           functions: 'defaultArguments',
         },
       ],
+
+      // This rule conflicts with Prettier for long props, such as:
+      // <Component
+      //   longProp={
+      //     someValueThatMakesThisPropSpanMultipleLinesAndThusNeedsProperNewlines
+      //   }
+      // />
+      //
+      'react/jsx-curly-newline': 'off',
     },
-    // This rule conflicts with Prettier for long props, such as:
-    // <Component
-    //   longProp={
-    //     someValueThatMakesThisPropSpanMultipleLinesAndThusNeedsProperNewlines
-    //   }
-    // />
-    //
-    'react/jsx-curly-newline': 'off',
   },
 
   // Unicorn plugin
