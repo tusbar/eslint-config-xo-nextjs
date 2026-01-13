@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-xo-nextjs",
-  "version": "7.1.1",
+  "version": "8.0.0",
   "description": "ESLint shareable config for Next.js to be used with eslint-config-xo",
   "repository": "https://github.com/tusbar/eslint-config-xo-nextjs",
   "author": "Bertrand Marron",
