@@ -64,7 +64,7 @@
     "@bizon/semantic-release-config": "^3.1.0",
     "@swc/core": "^1.15.8",
     "@swc/jest": "^0.2.39",
-    "@tsconfig/node24": "^24.0.3",
+    "@tsconfig/node24": "^24.0.4",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.7",
     "eslint-config-xo-bizon": "^4.2.0",
