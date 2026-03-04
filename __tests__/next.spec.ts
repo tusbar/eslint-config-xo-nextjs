@@ -98,3 +98,15 @@ describe('@next/next/no-unwanted-polyfillio', () => {
     )
   })
 })
+
+describe('@next/next/no-img-element', () => {
+  it('incorrect', async () => {
+    const result = await lintFixture('@next/next/no-img-element.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('@next/next/no-img-element')
+    expect(result.messages[0].message).toBe(
+      'Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element',
+    )
+  })
+})
