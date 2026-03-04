@@ -63,7 +63,7 @@ export default [
 
 - [XO](https://github.com/xojs/xo)
 - [eslint-config-xo-react](https://github.com/xojs/eslint-config-xo-react) - ESLint shareable config for React to be used with eslint-config-xo
-- [eslint-config-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-config-next) - ESLint config for Next.js projects
+- [@next/eslint-plugin-next](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next) - ESLint plugin for Next.js
 
 ## License
 
