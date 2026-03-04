@@ -1,8 +1,18 @@
-import eslintConfigNext from 'eslint-config-next'
+import nextPlugin from '@next/eslint-plugin-next'
 import {type XoConfigItem} from 'xo'
 
 export const xoNextJsConfig: XoConfigItem[] = [
-  ...(eslintConfigNext as XoConfigItem[]),
+  // @next/next plugin with recommended rules
+  {
+    plugins: {
+      '@next/next': nextPlugin,
+    },
+    rules: nextPlugin.configs.recommended.rules,
+  },
+
+  {
+    ignores: ['.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
+  },
 
   // React plugin
   {
@@ -52,12 +62,15 @@ export const xoNextJsConfig: XoConfigItem[] = [
       'react/jsx-no-duplicate-props': [
         'error',
         {
-          // This allows material-ui’s usage of inputProps and InputProps together:
+          // This allows material-ui's usage of inputProps and InputProps together:
           // <TextField inputProps={{…}} InputProps={{…}} /> errors otherwise.
           ignoreCase: false,
         },
       ],
+      'react/jsx-no-target-blank': 'off',
       'react/jsx-uses-react': 'off',
+      'react/no-unknown-property': 'off',
+      'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
       'react/require-default-props': [
         'warn',
