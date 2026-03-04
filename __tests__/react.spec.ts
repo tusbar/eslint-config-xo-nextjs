@@ -42,6 +42,30 @@ describe('react/react-in-jsx-scope', () => {
   })
 })
 
+describe('react/jsx-no-target-blank', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-no-target-blank.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+})
+
+describe('react/no-unknown-property', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/no-unknown-property.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+})
+
+describe('react/prop-types', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/prop-types.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+})
+
 describe('react/style-prop-object', () => {
   // This rule has moved to eslint-config-xo-react:
   // https://github.com/xojs/eslint-config-xo-react/pull/29
