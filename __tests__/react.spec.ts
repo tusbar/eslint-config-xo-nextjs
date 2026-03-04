@@ -1,10 +1,68 @@
 import {lintFixture} from './utils/lint-fixture.js'
 
+describe('react/function-component-definition', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/function-component-definition.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/function-component-definition.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/function-component-definition')
+    expect(result.messages[0].message).toBe('Function component is not an arrow function')
+  })
+})
+
 describe('react/jsx-closing-bracket-location', () => {
   it('correct', async () => {
     const result = await lintFixture('react/jsx-closing-bracket-location.correct.js')
 
     expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/jsx-closing-bracket-location.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/jsx-closing-bracket-location')
+    expect(result.messages[0].message).toBe(
+      'The closing bracket must be aligned with the opening tag (expected column 3)',
+    )
+  })
+})
+
+describe('react/jsx-curly-brace-presence', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-curly-brace-presence.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/jsx-curly-brace-presence.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/jsx-curly-brace-presence')
+    expect(result.messages[0].message).toBe('Curly braces are unnecessary here.')
+  })
+})
+
+describe('react/jsx-tag-spacing', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-tag-spacing.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/jsx-tag-spacing.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/jsx-tag-spacing')
+    expect(result.messages[0].message).toBe('A space is required before closing bracket')
   })
 })
 
