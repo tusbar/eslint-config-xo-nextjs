@@ -57,7 +57,7 @@
     "nextjs"
   ],
   "dependencies": {
-    "@next/eslint-plugin-next": "^16.1.6",
+    "@next/eslint-plugin-next": "^16.2.2",
     "eslint-config-xo-react": "^0.29.0"
   },
   "devDependencies": {
