@@ -16,10 +16,6 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./space": {
-      "import": "./dist/space.js",
-      "types": "./dist/space.d.ts"
     }
   },
   "scripts": {
@@ -81,8 +77,7 @@
   },
   "tsup": {
     "entry": [
-      "src/index.ts",
-      "src/space.ts"
+      "src/index.ts"
     ],
     "format": [
       "esm"

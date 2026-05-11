@@ -25,7 +25,7 @@ import xoNextjs from "eslint-config-xo-nextjs";
 
 /** @type {import('xo').FlatXoConfig} */
 export default [
-  ...xoNextjs,
+  ...xoNextjs(),
   {
     // …
   },
@@ -38,20 +38,20 @@ Or in typescript:
 import xoNextjs from "eslint-config-xo-nextjs";
 
 export default [
-  ...xoNextjs,
+  ...xoNextjs(),
   {
     // …
   },
 ] satisfies import("xo").FlatXoConfig;
 ```
 
-Use the space sub-config if you want 2 space indentation instead of tabs:
+Pass `{space: true}` (or a number) for space indentation instead of tabs on JSX props:
 
 ```ts
-import xoNextJsSpace from "eslint-config-xo-nextjs/space";
+import xoNextjs from "eslint-config-xo-nextjs";
 
 export default [
-  ...xoNextJsSpace,
+  ...xoNextjs({space: true}),
   {
     space: 2,
     // …

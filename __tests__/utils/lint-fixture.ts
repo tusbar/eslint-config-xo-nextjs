@@ -9,7 +9,7 @@ export async function lintFixture(fixture: string) {
     cwd: fixturesPath,
     space: 2,
     semicolon: false,
-    configPath: '../../src/space.ts',
+    configPath: '../utils/fixture-config.ts',
   })
 
   return {

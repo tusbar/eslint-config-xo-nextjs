@@ -66,6 +66,24 @@ describe('react/jsx-tag-spacing', () => {
   })
 })
 
+describe('react/jsx-indent-props', () => {
+  it('correct', async () => {
+    const result = await lintFixture('react/jsx-indent-props.correct.js')
+
+    expect(result.errorCount).toBe(0)
+  })
+
+  it('incorrect', async () => {
+    const result = await lintFixture('react/jsx-indent-props.incorrect.js')
+
+    expect(result.messages).toHaveLength(1)
+    expect(result.messages[0].ruleId).toBe('react/jsx-indent-props')
+    expect(result.messages[0].message).toBe(
+      'Expected indentation of 4 space characters but found 6.',
+    )
+  })
+})
+
 describe('react/jsx-no-duplicate-props', () => {
   it('correct', async () => {
     const result = await lintFixture('react/jsx-no-duplicate-props.correct.js')
