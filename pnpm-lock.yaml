@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@eslint/compat':
+        specifier: ^2.1.0
+        version: 2.1.0(eslint@10.3.0)
       '@next/eslint-plugin-next':
         specifier: ^16.2.6
         version: 16.2.6
