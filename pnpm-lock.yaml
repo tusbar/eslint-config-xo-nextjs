@@ -12,8 +12,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(eslint@10.3.0)
       '@next/eslint-plugin-next':
-        specifier: ^16.2.6
-        version: 16.2.6
+        specifier: ^16.2.9
+        version: 16.2.9
       eslint-config-xo-react:
         specifier: ^0.30.1
         version: 0.30.1(eslint@10.3.0)
@@ -819,8 +819,8 @@ packages:
   '@next/env@16.2.9':
     resolution: {integrity: sha512-ki5VxxXfzD/9TDe13wyeTKIjQTAwBVpnr8KhRDUr8ltMUq1/NBpWNT5tiPoxiGl+PHM4X2ahSOiPk6iAimIzPg==}
 
-  '@next/eslint-plugin-next@16.2.6':
-    resolution: {integrity: sha512-Z8l6o4JWKUl755x4R+wogD86KPeU+Ckw4K+SYG4kHeOJtRenDeK+OSbGcqZpDtbwn9DsJVdir2UxmwXuinUbUw==}
+  '@next/eslint-plugin-next@16.2.9':
+    resolution: {integrity: sha512-UZi8+YT/MLgTC9nrrn2Xd4lBYv1B7lVmtWHfPcthAI5Tt/C1LuDe6DfmtCtJ+WQod3ksY4VrKSvk3oMVAnL7qw==}
 
   '@next/swc-darwin-arm64@16.2.9':
     resolution: {integrity: sha512-HkfxNYUCmcct0Xsqib5KxqMSHV4AHJq857BNRchyBDs4YS19aHzVfn1kDuBYKqLLQBjXgnkIsjV2Kd4d2wzYhw==}
@@ -5400,7 +5400,7 @@ snapshots:
 
   '@next/env@16.2.9': {}
 
-  '@next/eslint-plugin-next@16.2.6':
+  '@next/eslint-plugin-next@16.2.9':
     dependencies:
       fast-glob: 3.3.1
 
